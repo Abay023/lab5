@@ -1,14 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!-- Do not edit head container-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/normalize.css"/>
-    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
 </head>
+
 <body>
-    
+    <header class="dash-header">
+        <img src="assets/logos/logo.jpg" alt="Logo" class="logo" />
+        <!-- search bar -->
+        <form class="search-form">
+            <input type="text" placeholder="Search..." />
+            <button type="submit">Search</button>
+        </form>
+        <!-- Avatar Image -->
+        <img src="assets/avatars/man.jpg" alt="Avatar" class="avatar man" />
+    </header>
+
+
+    <div class="dash-wrapper">
+        <aside class="sidebar">
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="#">Analytics</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Setting</a></li>
+                </ul>
+            </nav>
+            <!-- logout link -->
+            <a href="#" class="logout-link">Logout</a>
+        </aside>
+
+        <main class="dash-content">
+            <section class="stats-grid">
+                <article class="stat-card">
+                    <card class="card">
+                        <h3>Metric 1</h3>
+                    </card>
+                </article>
+                <article class="stat-card">
+                    <card class="card">
+                        <h3>Metric 2</h3>
+                    </card>
+                </article>
+                <article class="stat-card">
+                    <card class="card">
+                        <h3>Metric 3</h3>
+                    </card>
+                </article>
+                <article class="stat-card">
+                    <card class="card">
+                        <h3>Metric 4</h3>
+                    </card>
+                </article>
+            </section>
+
+            <section class="body-split">
+                <div class="body-left">
+                    <article class="card">
+                        <h3> Project Showcase (Table)</h3>
+                        <img src="assets/images/project1.jpg" alt="Project Showcase 1" />
+                        <img src="assets/images/project2.jpg" alt="Project Showcase 2" />
+                    </article>
+                </div>
+                <div class="body-right">
+                    <article class="card">
+                        <h3>Recent Activity</h3>
+                        <!-- - Audit Log Feed -->
+                    </article>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer class="dash-footer">
+        <p>&copy; 2026. Livia's midterm preparation.</p>
+    </footer>
 </body>
+
 </html>
