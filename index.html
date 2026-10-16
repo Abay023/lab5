@@ -1,87 +1,111 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
+  <head>
     <!-- Do not edit head container-->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <header class="dash-header">
-        <img src="assets/logos/logo.jpg" alt="Logo" class="logo" />
-        <!-- search bar -->
-        <form class="search-form">
-            <input type="text" placeholder="Search..." />
-            <button type="submit">Search</button>
-        </form>
-        <!-- Avatar Image -->
-        <img src="assets/avatars/man.jpg" alt="Avatar" class="avatar man" />
+      <img src="assets/logos/logo.jpg" alt="Logo" class="logo" />
+      <!-- search bar -->
+      <form class="search-form">
+        <input type="text" placeholder="Search..." />
+        <button type="submit">Search</button>
+      </form>
+      <!-- Avatar Image -->
+      <img src="assets/avatar/man.jpg" alt="Avatar" class="avatar man" />
     </header>
 
-
     <div class="dash-wrapper">
-        <aside class="sidebar">
-            <nav class="sidebar-nav">
-                <ul>
-                    <li><a href="#">Dashboard</a></li>
-                    <li><a href="#">Analytics</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Setting</a></li>
-                </ul>
-            </nav>
-            <!-- logout link -->
-            <a href="#" class="logout-link">Logout</a>
-        </aside>
+      <aside class="sidebar">
+        <nav class="sidebar-nav">
+          <ul>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Analytics</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Setting</a></li>
+          </ul>
+        </nav>
+        <!-- logout link -->
+        <a class="logout-link" href="#">Logout</a>
+      </aside>
+<!-- /* Statistical Cards Content Direction 
+Inside the <section class="stats-grid"> section, construct 4 individual metric cards representing key analytics
+for the dashboard. Each card must include:
+1. Category Label: A brief title describing the metric (e.g., Total Users, Monthly Revenue, Active Projects,
+Completion Rate).
+2. Key Metric Value: A bold, prominent number or value (e.g., 1,248, $14,850, 34, 94.2%).
+3. Trend / Secondary Line: A small indicator or context line below the value (e.g., +12% this month, 6
+closing this week). */ -->
+      <main class="dash-content">
+        <section class="stats-grid">
+          <article class="stat-card">
+            <card class="metric-card">
+              <h3>Total Users</h3>
+              <p class="metric-value">1,248</p>
+              <p class="trend">+12% this month</p>
+            </card>
+          </article>
+          <article class="stat-card">
+            <card class="metric-card">
+              <h3>Monthly Revenue</h3>
+              <p class="metric-value">$14,850</p>
+              <p class="trend">+8% this month</p>
+            </card>
+          </article>
+          <article class="stat-card">
+            <card class="metric-card">
+              <h3>Active Projects</h3>
+              <p class="metric-value">34</p>
+              <p class="trend">6 closing this week</p>
+            </card>
+          </article>
+          <article class="stat-card">
+            <card class="metric-card">
+              <h3>Completion Rate</h3>
+              <p class="metric-value">94.2%</p>
+              <p class="trend">+2.1% this month</p>
+            </card>
+          </article>
+        </section>
 
-        <main class="dash-content">
-            <section class="stats-grid">
-                <article class="stat-card">
-                    <card class="card">
-                        <h3>Metric 1</h3>
-                    </card>
-                </article>
-                <article class="stat-card">
-                    <card class="card">
-                        <h3>Metric 2</h3>
-                    </card>
-                </article>
-                <article class="stat-card">
-                    <card class="card">
-                        <h3>Metric 3</h3>
-                    </card>
-                </article>
-                <article class="stat-card">
-                    <card class="card">
-                        <h3>Metric 4</h3>
-                    </card>
-                </article>
-            </section>
-
-            <section class="body-split">
-                <div class="body-left">
-                    <article class="card">
-                        <h3> Project Showcase (Table)</h3>
-                        <img src="assets/images/project1.jpg" alt="Project Showcase 1" />
-                        <img src="assets/images/project2.jpg" alt="Project Showcase 2" />
-                    </article>
-                </div>
-                <div class="body-right">
-                    <article class="card">
-                        <h3>Recent Activity</h3>
-                        <!-- - Audit Log Feed -->
-                    </article>
-                </div>
-            </section>
-        </main>
+        <section class="body-split">
+          <div class="body-left">
+            <article class="project-card">
+              <h3>Project Showcase (Table)</h3>
+              <img
+                src="assets/images/project1.jpg"
+                alt="Project Showcase 1"
+              />
+              <img
+                src="assets/images/project2.jpg"
+                alt="Project Showcase 2"
+              />
+            </article>
+          </div>
+          <div class="body-right">
+              <h3>Recent Activity</h3>
+              <!-- - Audit Log Feed -->
+               <ul class="auditLog-feed">
+                <li class="Username">Livia Hu
+                </li>
+                <li class="action-description"> Livia updated her project 1 details.</span>
+                </li>
+                <li class="timestamp">4 mins ago
+                </li>
+               </ul>
+          </div>
+        </section>
+      </main>
     </div>
 
     <footer class="dash-footer">
-        <p>&copy; 2026. Livia's midterm preparation.</p>
+      <p>&copy; 2026 CCT360 Analytics Portal - Midterm Exam</p>
     </footer>
-</body>
-
+  </body>
 </html>
